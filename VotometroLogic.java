@@ -20,14 +20,23 @@ public class VotometroLogic {
         System.out.println("-2 : Discordo Totalmente");
     }
 
-    //public void verificar 
+    public int checkOption () {      
+        int opcao = sc.nextInt();
+
+        while (opcao != -2 && opcao != -1 && opcao != 0 && opcao != 1 && opcao != 2) {
+            System.out.println("Erro, repita: Qual a sua opção de 2 a -2: ");
+            opcao = sc.nextInt();
+            
+        } 
+        return opcao;
+    }
 
     public void pergunta1() {
         System.out.println("1 - O Benfica deve reduzir o número de contratações e apostar fortemente na estabilidade do plantel e formação.");
         options();
         
         System.out.println("Qual a sua opção de 2 a -2: ");
-        int opcao = sc.nextInt();
+        int opcao = checkOption();
 
         int [] candidatosEscolha = {1,1,1,0,2,2};  
 
@@ -39,7 +48,7 @@ public class VotometroLogic {
         options();
 
         System.out.println("Qual a sua opção de 2 a -2: ");
-        int opcao = sc.nextInt();
+        int opcao = checkOption();
 
         int [] candidatosEscolha = {1,-1,-2,2,-1,-2};   
 
@@ -53,7 +62,7 @@ public class VotometroLogic {
         options();
 
         System.out.println("Qual a sua opção de 2 a -2: ");
-        int opcao = sc.nextInt();
+        int opcao = checkOption();
 
         int [] candidatosEscolha = {1,-2,-2,2,-1,1};  
 
@@ -66,7 +75,7 @@ public class VotometroLogic {
         options();
 
         System.out.println("Qual a sua opção de 2 a -2: ");
-        int opcao = sc.nextInt();
+        int opcao = checkOption();
 
         int [] candidatosEscolha = {0,1,2,-1,1,1};  
 
@@ -80,7 +89,7 @@ public class VotometroLogic {
 
         System.out.println("Qual a sua opção de 2 a -2: ");
       
-        int opcao = sc.nextInt();
+        int opcao = checkOption();;
 
         int [] candidatosEscolha = {0,2,1,2,1,0};  
 
@@ -95,7 +104,7 @@ public class VotometroLogic {
 
         System.out.println("Qual a sua opção de 2 a -2: ");
 
-        int opcao = sc.nextInt();
+        int opcao = checkOption();
 
         int [] candidatosEscolha = {0,2,2,-2,2,1};  
 
@@ -110,7 +119,7 @@ public class VotometroLogic {
 
         System.out.println("Qual a sua opção de 2 a -2: ");
        
-        int opcao = sc.nextInt();
+        int opcao = checkOption();
 
         int [] candidatosEscolha = {1,2,1,-1,2,2};  
 
@@ -124,7 +133,7 @@ public class VotometroLogic {
         options();
         System.out.println("Qual a sua opção de 2 a -2: ");
  
-        int opcao = sc.nextInt();
+        int opcao = checkOption();
 
         int [] candidatosEscolha = {1,-2,-2,2,1,0};  
 
@@ -139,7 +148,7 @@ public class VotometroLogic {
 
         System.out.println("Qual a sua opção de 2 a -2: ");
     
-        int opcao = sc.nextInt();
+        int opcao = checkOption();
 
         int [] candidatosEscolha = {0,-2,-1,2,1,0};  
 
@@ -154,7 +163,7 @@ public class VotometroLogic {
 
         System.out.println("Qual a sua opção de 2 a -2: ");
      
-        int opcao = sc.nextInt();
+        int opcao = checkOption();
 
         int [] candidatosEscolha = {-2,2,2,-2,1,1};  
 
