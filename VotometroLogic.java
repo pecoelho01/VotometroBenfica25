@@ -23,9 +23,13 @@ public class VotometroLogic {
     public int checkOption () {      
         int opcao = sc.nextInt();
 
-        while (opcao != -2 && opcao != -1 && opcao != 0 && opcao != 1 && opcao != 2) {
-            System.out.println("Erro, repita: Qual a sua opção de 2 a -2: ");
-            opcao = sc.nextInt();
+        while (true) {
+
+            if ( opcao != -2 && opcao != -1 && opcao != 0 && opcao != 1 && opcao != 2 ) {
+                System.out.println("Erro, repita: Qual a sua opção de 2 a -2: ");
+                opcao = sc.nextInt();
+            }
+            break;
             
         } 
         return opcao;
